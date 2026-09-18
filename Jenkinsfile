@@ -24,7 +24,7 @@ pipeline {
             steps {
                 bat 'docker stop student-management-container || exit 0'
                 bat 'docker rm student-management-container || exit 0'
-                bat 'docker run -d --name student-management-container -p 8081:8080 student-management:latest'
+                bat 'docker run -d --name student-management-container -p 8081:8081 student-management:latest'
             }
         }
     }
